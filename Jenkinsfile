@@ -8,7 +8,7 @@ node {
  def quayUsername = "deis+jenkins"
  def quayEmail = "deis+jenkins@deis.com"
  withCredentials([[$class: 'StringBinding',
-                    credentialsId: '614c646f-57fc-4cdb-a70e-cbd5b0d91737',
+                    credentialsId: '8317a529-10f7-40b5-abd4-a42f242f22f0',
                     variable: 'QUAY_PASSWORD']]) {
 
    sh """

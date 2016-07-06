@@ -1,6 +1,6 @@
 #!groovy
 
-node {
+node('linux') {
  stage 'Checkout'
  checkout scm
 

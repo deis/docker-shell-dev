@@ -1,5 +1,6 @@
 # deis/docker-shell-dev
 
+[![Build Status](https://ci.deis.io/buildStatus/icon?job=Deis/docker-shell-dev/master)](https://ci.deis.io/job/Deis/job/docker-shell-dev/job/master/)
 [![Docker Repository on Quay](https://quay.io/repository/deis/shell-dev/status "Docker Repository on Quay")](https://quay.io/repository/deis/shell-dev)
 
 A containerized environment for running [bats][] tests and/or [shellcheck][] against bash scripts.

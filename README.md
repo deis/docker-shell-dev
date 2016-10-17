@@ -9,6 +9,7 @@ A containerized environment for running [bats][] tests and/or [shellcheck][] aga
 
 * [bats][] for running `.bats` tests
 * [shellcheck][] for running `shellcheck` against bash scripts
+* [jq][]
 
 ## Usage
 
@@ -45,5 +46,6 @@ The latest deis/shell-dev Docker image is available at:
 
 [bats]: https://github.com/sstephenson/bats/
 [shellcheck]: https://github.com/koalaman/shellcheck
+[jq]: https://stedolan.github.io/jq/
 [Quay.io]: https://quay.io
 [Docker Hub]: https://hub.docker.com

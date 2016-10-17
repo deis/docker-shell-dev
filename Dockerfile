@@ -12,7 +12,7 @@ RUN adduser --system \
 	shelly
 
 RUN apt-get update -q \
-	&& apt-get install -y -q --no-install-recommends bash make curl ca-certificates \
+	&& apt-get install -y -q --no-install-recommends bash make curl ca-certificates jq \
 	&& curl -L https://s3-us-west-2.amazonaws.com/get-deis/shellcheck-${SHELLCHECK_VERSION}-linux-amd64 -o /usr/local/bin/shellcheck \
 	&& chmod +x /usr/local/bin/shellcheck \
 	&& curl -o "/tmp/v${BATS_VERSION}.tar.gz" -L \

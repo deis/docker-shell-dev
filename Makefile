@@ -1,4 +1,4 @@
-VERSION := $(shell git describe --tags --exact-match 2>/dev/null || echo latest)
+VERSION ?= $(shell git describe --tags --exact-match 2>/dev/null || echo latest)
 
 SHORT_NAME := shell-dev
 REGISTRY ?= quay.io/

@@ -62,7 +62,7 @@ def buildAndPush = { Map registry, String commit ->
   String server = registry.name.contains('dockerhub') ? '' : 'quay.io'
   String registryPrefix = registry.name.contains('quay') ? 'quay.io/' : ''
   String imagePrefix = registry.name.contains('staging') ? 'deisci' : 'deis'
-  String version = registry.name.contains('staging') ? "git-${commit}" : ''
+  String version = registry.name.contains('staging') ? "git-${commit}" : 'latest'
 
   sh """
     docker login -e="${registry.email}" -u="${registry.username}" -p="\${REGISTRY_PASSWORD}" ${server}
